@@ -242,32 +242,32 @@ public class Grafica extends javax.swing.JFrame {
 
     private void BotonSenoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonSenoMouseClicked
     Numero.Numero3=Float.parseFloat(Valor3.getText());
-    this.Resultado.setText(String.valueOf(Numero.Seno()));
+    this.ResultadoTrigonometrico.setText(String.valueOf(Numero.Seno()));
     }//GEN-LAST:event_BotonSenoMouseClicked
 
     private void BotonCosenoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCosenoMouseClicked
     Numero.Numero3=Float.parseFloat(Valor3.getText());
-    this.Resultado.setText(String.valueOf(Numero.Coseno()));
+    this.ResultadoTrigonometrico.setText(String.valueOf(Numero.Coseno()));
     }//GEN-LAST:event_BotonCosenoMouseClicked
 
     private void BotonTangenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonTangenteMouseClicked
     Numero.Numero3=Float.parseFloat(Valor3.getText());
-    this.Resultado.setText(String.valueOf(Numero.Tangente()));
+    this.ResultadoTrigonometrico.setText(String.valueOf(Numero.Tangente()));
     }//GEN-LAST:event_BotonTangenteMouseClicked
 
     private void BotonSecanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonSecanteMouseClicked
     Numero.Numero3=Float.parseFloat(Valor3.getText());
-    this.Resultado.setText(String.valueOf(Numero.Secante()));
+    this.ResultadoTrigonometrico.setText(String.valueOf(Numero.Secante()));
     }//GEN-LAST:event_BotonSecanteMouseClicked
 
     private void BotonCosecanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCosecanteMouseClicked
     Numero.Numero3=Float.parseFloat(Valor3.getText());
-    this.Resultado.setText(String.valueOf(Numero.Cosecante()));
+    this.ResultadoTrigonometrico.setText(String.valueOf(Numero.Cosecante()));
     }//GEN-LAST:event_BotonCosecanteMouseClicked
 
     private void BotonCotangenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCotangenteMouseClicked
     Numero.Numero3=Float.parseFloat(Valor3.getText());
-    this.Resultado.setText(String.valueOf(Numero.Cotangente()));
+    this.ResultadoTrigonometrico.setText(String.valueOf(Numero.Cotangente()));
     }//GEN-LAST:event_BotonCotangenteMouseClicked
 
     /**
