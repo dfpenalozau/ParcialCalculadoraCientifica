@@ -80,16 +80,50 @@ public class Grafica extends javax.swing.JFrame {
         Valor2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         BotonSeno.setText("Sen");
+        BotonSeno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonSenoMouseClicked(evt);
+            }
+        });
 
         BotonCoseno.setText("Cos");
+        BotonCoseno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonCosenoMouseClicked(evt);
+            }
+        });
 
         BotonTangente.setText("Tan");
+        BotonTangente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonTangenteMouseClicked(evt);
+            }
+        });
 
         BotonCotangente.setText("Cot");
+        BotonCotangente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonCotangenteMouseClicked(evt);
+            }
+        });
 
         BotonCosecante.setText("Csc");
+        BotonCosecante.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonCosecanteMouseClicked(evt);
+            }
+        });
 
         BotonSecante.setText("Sec");
+        BotonSecante.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonSecanteMouseClicked(evt);
+            }
+        });
+
+        ResultadoTrigonometrico.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        Valor3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -205,6 +239,36 @@ public class Grafica extends javax.swing.JFrame {
     Numero.Numero2=Float.parseFloat(Valor2.getText());
     this.Resultado.setText(String.valueOf(Numero.Dividir()));
     }//GEN-LAST:event_BotonDividirMouseClicked
+
+    private void BotonSenoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonSenoMouseClicked
+    Numero.Numero3=Float.parseFloat(Valor3.getText());
+    this.Resultado.setText(String.valueOf(Numero.Seno()));
+    }//GEN-LAST:event_BotonSenoMouseClicked
+
+    private void BotonCosenoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCosenoMouseClicked
+    Numero.Numero3=Float.parseFloat(Valor3.getText());
+    this.Resultado.setText(String.valueOf(Numero.Coseno()));
+    }//GEN-LAST:event_BotonCosenoMouseClicked
+
+    private void BotonTangenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonTangenteMouseClicked
+    Numero.Numero3=Float.parseFloat(Valor3.getText());
+    this.Resultado.setText(String.valueOf(Numero.Tangente()));
+    }//GEN-LAST:event_BotonTangenteMouseClicked
+
+    private void BotonSecanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonSecanteMouseClicked
+    Numero.Numero3=Float.parseFloat(Valor3.getText());
+    this.Resultado.setText(String.valueOf(Numero.Secante()));
+    }//GEN-LAST:event_BotonSecanteMouseClicked
+
+    private void BotonCosecanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCosecanteMouseClicked
+    Numero.Numero3=Float.parseFloat(Valor3.getText());
+    this.Resultado.setText(String.valueOf(Numero.Cosecante()));
+    }//GEN-LAST:event_BotonCosecanteMouseClicked
+
+    private void BotonCotangenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCotangenteMouseClicked
+    Numero.Numero3=Float.parseFloat(Valor3.getText());
+    this.Resultado.setText(String.valueOf(Numero.Cotangente()));
+    }//GEN-LAST:event_BotonCotangenteMouseClicked
 
     /**
      * @param args the command line arguments

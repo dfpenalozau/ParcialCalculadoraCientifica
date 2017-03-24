@@ -201,35 +201,59 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Sen"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonSenoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="BotonCoseno">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cos"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonCosenoMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="BotonTangente">
       <Properties>
         <Property name="text" type="java.lang.String" value="Tan"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonTangenteMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="BotonCotangente">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cot"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonCotangenteMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="BotonCosecante">
       <Properties>
         <Property name="text" type="java.lang.String" value="Csc"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonCosecanteMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="BotonSecante">
       <Properties>
         <Property name="text" type="java.lang.String" value="Sec"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonSecanteMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="ResultadoTrigonometrico">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="Valor3">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
