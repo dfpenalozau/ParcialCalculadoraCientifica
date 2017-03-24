@@ -26,7 +26,26 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="Resultado" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="BotonSecante" min="-2" pref="70" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="BotonCosecante" min="-2" pref="70" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="BotonCotangente" min="-2" pref="70" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="BotonSeno" min="-2" pref="70" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="BotonCoseno" min="-2" pref="70" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="BotonTangente" min="-2" pref="70" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="ResultadoTrigonometrico" max="32767" attributes="0"/>
+                  </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Component id="EtiquetaNumero2" max="32767" attributes="0"/>
@@ -36,20 +55,22 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="BotonRestar" min="-2" pref="100" max="-2" attributes="0"/>
                           </Group>
+                          <Component id="Valor3" min="-2" pref="215" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Resultado" alignment="1" max="32767" attributes="0"/>
+                          <Component id="EtiquetaResultado" alignment="1" max="32767" attributes="0"/>
                           <Component id="Valor1" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="BotonMultiplicar" min="-2" pref="100" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="BotonDividir" min="-2" pref="100" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
                           </Group>
                           <Component id="Valor2" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="EtiquetaResultado" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -76,10 +97,36 @@
                   <Component id="BotonDividir" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="Resultado" min="-2" pref="70" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="EtiquetaResultado" min="-2" pref="50" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="EtiquetaResultado" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Resultado" min="-2" pref="70" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="Valor3" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="BotonSeno" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BotonCoseno" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BotonTangente" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="BotonCotangente" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BotonCosecante" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BotonSecante" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                      <Component id="ResultadoTrigonometrico" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -149,6 +196,40 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="BotonSeno">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="BotonCoseno">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="BotonTangente">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tan"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="BotonCotangente">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cot"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="BotonCosecante">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Csc"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="BotonSecante">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sec"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ResultadoTrigonometrico">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Valor3">
     </Component>
   </SubComponents>
 </Form>

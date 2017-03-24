@@ -25,6 +25,14 @@ public class Grafica extends javax.swing.JFrame {
         EtiquetaResultado = new javax.swing.JLabel();
         Valor1 = new javax.swing.JTextField();
         Valor2 = new javax.swing.JTextField();
+        BotonSeno = new javax.swing.JToggleButton();
+        BotonCoseno = new javax.swing.JToggleButton();
+        BotonTangente = new javax.swing.JToggleButton();
+        BotonCotangente = new javax.swing.JToggleButton();
+        BotonCosecante = new javax.swing.JToggleButton();
+        BotonSecante = new javax.swing.JToggleButton();
+        ResultadoTrigonometrico = new javax.swing.JTextField();
+        Valor3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,6 +79,18 @@ public class Grafica extends javax.swing.JFrame {
 
         Valor2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        BotonSeno.setText("Sen");
+
+        BotonCoseno.setText("Cos");
+
+        BotonTangente.setText("Tan");
+
+        BotonCotangente.setText("Cot");
+
+        BotonCosecante.setText("Csc");
+
+        BotonSecante.setText("Sec");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -78,7 +98,22 @@ public class Grafica extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Resultado)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(BotonSecante, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(BotonCosecante, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(BotonCotangente, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(BotonSeno, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(BotonCoseno, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(BotonTangente, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(ResultadoTrigonometrico))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(EtiquetaNumero2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -86,17 +121,19 @@ public class Grafica extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(BotonSumar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(BotonRestar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
+                                .addComponent(BotonRestar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Valor3, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(15, 15, 15)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Resultado, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(EtiquetaResultado, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Valor1)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(BotonMultiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(BotonDividir, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(Valor2)))
-                    .addComponent(EtiquetaResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(0, 3, Short.MAX_VALUE))
+                            .addComponent(Valor2))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -117,10 +154,29 @@ public class Grafica extends javax.swing.JFrame {
                     .addComponent(BotonMultiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BotonDividir, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(EtiquetaResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(EtiquetaResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Valor3))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BotonSeno)
+                            .addComponent(BotonCoseno)
+                            .addComponent(BotonTangente))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BotonCotangente)
+                            .addComponent(BotonCosecante)
+                            .addComponent(BotonSecante))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(ResultadoTrigonometrico)))
+                .addContainerGap())
         );
 
         pack();
@@ -186,15 +242,23 @@ public class Grafica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton BotonCosecante;
+    private javax.swing.JToggleButton BotonCoseno;
+    private javax.swing.JToggleButton BotonCotangente;
     private javax.swing.JButton BotonDividir;
     private javax.swing.JButton BotonMultiplicar;
     private javax.swing.JButton BotonRestar;
+    private javax.swing.JToggleButton BotonSecante;
+    private javax.swing.JToggleButton BotonSeno;
     private javax.swing.JButton BotonSumar;
+    private javax.swing.JToggleButton BotonTangente;
     private javax.swing.JLabel EtiquetaNumero1;
     private javax.swing.JLabel EtiquetaNumero2;
     private javax.swing.JLabel EtiquetaResultado;
     private javax.swing.JTextField Resultado;
+    private javax.swing.JTextField ResultadoTrigonometrico;
     private javax.swing.JTextField Valor1;
     private javax.swing.JTextField Valor2;
+    private javax.swing.JTextField Valor3;
     // End of variables declaration//GEN-END:variables
 }
